@@ -121,8 +121,9 @@ main {
         "image";
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "name name"
-        "description image"
+        "name"
+        "description" 
+        "image"
 
     }
 
@@ -143,10 +144,11 @@ main {
         "name"
         "description"
         "image";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "name name"
-        "image description"
+        "name"
+        "image" 
+        "description"
 
     }
 
@@ -167,10 +169,11 @@ main {
         "name"
         "description"
         "image";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "name name"
-        "description image"
+        "name"
+        "description"
+         "image"
 
     }
 }

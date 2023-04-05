@@ -433,7 +433,7 @@ main div.device1 {
   display: grid;
   grid-template-areas: "name" "description" "image";
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "name name" "description image";
+  grid-template-areas: "name" "description" "image";
 }
 main div.device1 h2 {
   grid-area: name;
@@ -453,8 +453,8 @@ main div.device2 {
   margin-bottom: 2vh;
   display: grid;
   grid-template-areas: "name" "description" "image";
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "name name" "image description";
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "image" "description";
 }
 main div.device2 h2 {
   grid-area: name;
@@ -474,8 +474,8 @@ main div.device3 {
   margin-bottom: 2vh;
   display: grid;
   grid-template-areas: "name" "description" "image";
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "name name" "description image";
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "description" "image";
 }
 main div.device3 h2 {
   grid-area: name;
@@ -509,6 +509,69 @@ footer {
     grid-template-columns: 150px auto;
   }
   /*----------- BODY --------------*/
+  main div.device1 {
+    background: #fafafa;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    padding: 0.5rem;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-areas: "name" "description" "image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name name" "description image";
+  }
+  main div.device1 h2 {
+    grid-area: name;
+  }
+  main div.device1 p {
+    grid-area: description;
+  }
+  main div.device1 img {
+    grid-area: image;
+  }
+  main div.device2 {
+    background: #fafafa;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    padding: 0.5rem;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-areas: "name" "description" "image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name name" "image description";
+  }
+  main div.device2 h2 {
+    grid-area: name;
+  }
+  main div.device2 p {
+    grid-area: description;
+  }
+  main div.device2 img {
+    grid-area: image;
+  }
+  main div.device3 {
+    background: #fafafa;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    padding: 0.5rem;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-areas: "name" "description" "image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name name" "description image";
+  }
+  main div.device3 h2 {
+    grid-area: name;
+  }
+  main div.device3 p {
+    grid-area: description;
+  }
+  main div.device3 img {
+    grid-area: image;
+  }
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   a.myjump {
