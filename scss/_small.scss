@@ -1,0 +1,195 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+div#pageWrapper {
+    display: grid;
+    grid-template-areas:
+    "hamburger"
+    "header"
+    "content"
+    "footer"
+    "navigation";
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    grid-area: header;
+    background: #3D0963;
+    img {width: 25%; margin-bottom: .5rem;}
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump{
+    display: block;
+    width: 60px;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.7rem;
+    padding: .4rem;
+    text-decoration: none;
+    padding-left: 2%;
+}
+
+nav {
+    background-color: #b68aff;
+    grid-area: navigation;
+    height: 100vh;
+    font-family: $defaultFont;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    flex-basis: 100%;
+    
+}
+nav ul li a {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.4);
+    color: #000;
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+
+/*----------- HAMBURGER --------------*/
+div#hamburger {
+    background-color: #b68aff; 
+    grid-area: hamburger;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    background: #3D0963;
+    color: white;
+    h1 {margin: 0; padding: 1rem 0 0 0; font-family: $headerFont;}
+    h2 {font-family: $headerFont;}
+    p {margin: 0; padding: .5rem 0; font-family: $defaultFont; font-weight: 300;}
+    img {
+        width: 150;
+        height: 250px;
+    }
+    grid-area: content;
+
+    div.device1 {
+        background: #fafafa;
+        color: black;
+        border-radius:10px;
+        box-shadow: 10px 10px 10px;
+        padding: .5rem;
+        margin-bottom: 2vh;
+
+        h2 {grid-area: name;}
+        p{grid-area: description;}
+        img{grid-area: image;}
+
+        display: grid;
+        grid-template-areas:
+        "name"
+        "description"
+        "image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name name"
+        "description image"
+
+    }
+
+    div.device2 {
+        background: #fafafa;
+        color: black;
+        border-radius:10px;
+        box-shadow: 10px 10px 10px;
+        padding: .5rem;
+        margin-bottom: 2vh;
+
+        h2 {grid-area: name;}
+        p{grid-area: description;}
+        img{grid-area: image;}
+
+        display: grid;
+        grid-template-areas:
+        "name"
+        "description"
+        "image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name name"
+        "image description"
+
+    }
+
+    div.device3 {
+        background: #fafafa;
+        color: black;
+        border-radius:10px;
+        box-shadow: 10px 10px 10px;
+        padding: .5rem;
+        margin-bottom: 2vh;
+
+        h2 {grid-area: name;}
+        p{grid-area: description;}
+        img{grid-area: image;}
+
+        display: grid;
+        grid-template-areas:
+        "name"
+        "description"
+        "image";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name name"
+        "description image"
+
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #b68aff;
+    color: white;
+    padding: .5rem 2%;
+    text-align: center;
+    grid-area: footer;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
