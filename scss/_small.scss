@@ -97,8 +97,8 @@ main {
     h2 {font-family: $headerFont;}
     p {margin: 0; padding: .5rem 0; font-family: $defaultFont; font-weight: 300;}
     img {
-        width: 150;
-        height: 250px;
+        width: 200px;
+        height: auto;
     }
     grid-area: content;
 
@@ -182,7 +182,7 @@ main {
 /*----------- FOOTER --------------*/
 footer {
     background-color: #b68aff;
-    color: white;
+    color: black;
     padding: .5rem 2%;
     text-align: center;
     grid-area: footer;

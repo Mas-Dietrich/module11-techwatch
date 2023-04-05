@@ -420,8 +420,8 @@ main p {
   font-weight: 300;
 }
 main img {
-  width: 150;
-  height: 250px;
+  width: 200px;
+  height: auto;
 }
 main div.device1 {
   background: #fafafa;
@@ -490,7 +490,7 @@ main div.device3 img {
 /*----------- FOOTER --------------*/
 footer {
   background-color: #b68aff;
-  color: white;
+  color: black;
   padding: 0.5rem 2%;
   text-align: center;
   grid-area: footer;
